@@ -1,4 +1,4 @@
-# python project
+
 print("Welcome to my computer quiz!")
 
 playing = input("Do you want to play? ")
@@ -39,3 +39,4 @@ else:
 
 print("You got " + str(score) + " questions correct!")
 print("You got " + str((score / 4) * 100) + "%.")
+
