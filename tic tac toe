@@ -72,3 +72,14 @@ while turn_number < 9:
     winner = check_win(board, turn)
     if winner:
         break
+
+    if turn == "X":
+        turn = "O"
+    else:
+        turn = "X"
+    turn_number += 1
+
+if turn_number == 9:
+    print("Tied game.")
+else:
+    print("The winner was", turn)
