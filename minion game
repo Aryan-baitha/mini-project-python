@@ -10,3 +10,48 @@ instruction = '''
 
         A player gets +1 point for each occurrence of the substring in the string .
 '''
+def check(alpha) :
+    vowels = ['a','e','i','o','u']
+    for vowel in vowels:
+        if alpha == vowel:
+            return True
+    return False
+
+
+def minion_game(s):
+    p1 = input("enter name of player 1 who is taken strings are starts from consonant: \n")
+    p2 = input("enter name of player 2 who is taken strings are starts from vowel: \n")
+    s.lower()
+    k =len(s)
+    v = []
+    c = []
+    vowel = 0
+    const = 0
+    for a in range(k):
+        if(check(s[a])):
+            v.append(a)
+            vowel += 1
+        else:
+            c.append(a)
+            const += 1
+    # print(c)
+    cPossible = []
+    vPossible = []
+    list = [c,v]
+    for i1 in list:
+        for value in i1:
+            l = value
+            i = 1
+            for _ in range(k-l):
+                temp = ''
+                for _ in range(k - (k - i)):
+                    # print(s[l], end="")
+                    temp = temp + s[l]
+                    l += 1
+                if i1 == c:
+                    cPossible.append(temp)
+                else:
+                    vPossible.append(temp)
+                temp = ''
+                l = value  
+                i += 1         
