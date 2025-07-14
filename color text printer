@@ -4,3 +4,7 @@ from colorama import Back, Fore
 
 # This line is make sure that the color style resets once the execution of program is complete
 colorama.init(autoreset = True)
+
+text = input("Enter a pharse or sentence: ")
+
+# Colorama has limited color options
