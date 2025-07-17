@@ -1,0 +1,14 @@
+# This script gives you the subject of mails received from a given list of mail addresses
+import imaplib
+
+
+
+user = 'Your Gamil address'
+password = 'Your password'
+
+mail = imaplib.IMAP4_SSL('imap.gmail.com')
+mail.login(user, password)
+mail.list()
+
+mail.select("inbox")  # connects to your inbox, change the argument to access different categories.
+
