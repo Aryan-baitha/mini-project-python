@@ -1,4 +1,4 @@
-# This script gives you the subject of mails received from a given list of mail addresses
+#This script gives you the subject of mails received from a given list of mail addresses
 import imaplib
 
 
@@ -42,3 +42,8 @@ def readMails(address):
     print("Subject: ", subject[0:subject_end], '\n\n')
    
 
+
+listOfMails = ['mail1@gmail.com','mail2@gmail.com']           #Modify the list contents here to suit you. If you would like to view mails 
+                                                                                                    #  from say, 'abc@gmail.com' change 'mail1@gmail.com' to 'abc@gmail.com'
+for addresses in listOfMails:
+    readMails(addresses)
