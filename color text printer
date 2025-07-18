@@ -1,5 +1,3 @@
-
-
 import colorama
 # Back for background, Fore for text color
 from colorama import Back, Fore
