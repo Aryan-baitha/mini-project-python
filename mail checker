@@ -1,3 +1,4 @@
+
 #This script gives you the subject of mails received from a given list of mail addresses
 import imaplib
 
