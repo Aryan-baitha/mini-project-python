@@ -1,7 +1,5 @@
 
 
-
-
 def addressVal(address):
     dot = address.find(".")
     at = address.find("@")
